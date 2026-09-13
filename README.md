@@ -4,6 +4,32 @@
 
 Kronos 5G Core is a 5G Standalone (SA) Core Network software platform intended for evaluation, development, interoperability testing, and Local 5G / Private 5G PoC environments.
 
+> The Kronos 5G Core software package is distributed through **GitHub Releases**.
+> `git clone` retrieves this repository and README, but does not download the release package.
+
+## Download v0.1.0
+
+On Linux, the current release can be downloaded and verified with:
+
+```bash
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS
+
+sha256sum -c SHA256SUMS
+```
+
+If verification succeeds:
+
+```text
+kronos5gcore.tar.gz: OK
+```
+
+Extract the package with:
+
+```bash
+tar xzf kronos5gcore.tar.gz
+```
+
 [English](#english) | [日本語](#日本語)
 
 ---
@@ -49,20 +75,20 @@ This allows basic 5G Core functionality to be evaluated without a paid license.
 
 ### Releases
 
-Release packages are available from the **Releases** section of this repository.
+Release packages are distributed through the **Releases** section of this repository.
 
 Current public release:
 
 **Kronos 5G Core v0.1.0**
 
-Release package:
+Release files:
 
 ```text
 kronos5gcore.tar.gz
 SHA256SUMS
 ```
 
-The integrity of the downloaded archive can be verified on Linux with:
+The integrity of the downloaded archive can be verified with:
 
 ```bash
 sha256sum -c SHA256SUMS
@@ -100,6 +126,35 @@ This project does not claim 3GPP certification or full conformance.
 
 3GPP仕様で定義されている5G Coreの機能構成を考慮して設計されています。
 
+### ダウンロード
+
+Kronos 5G Coreのソフトウェアパッケージは、GitHubの **Releases** から配布しています。
+
+Linuxでは以下のコマンドでv0.1.0を取得できます。
+
+```bash
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS
+```
+
+ダウンロード後、SHA-256ハッシュを確認します。
+
+```bash
+sha256sum -c SHA256SUMS
+```
+
+正常な場合は以下のように表示されます。
+
+```text
+kronos5gcore.tar.gz: OK
+```
+
+アーカイブを展開します。
+
+```bash
+tar xzf kronos5gcore.tar.gz
+```
+
 ### 主な特徴
 
 * 5G Standalone Core Networkソフトウェア
@@ -131,8 +186,6 @@ Demo Modeでは以下を利用できます。
 
 ### リリース
 
-リリースパッケージは、本リポジトリの **Releases** からダウンロードできます。
-
 現在の公開リリース：
 
 **Kronos 5G Core v0.1.0**
@@ -142,12 +195,6 @@ Demo Modeでは以下を利用できます。
 ```text
 kronos5gcore.tar.gz
 SHA256SUMS
-```
-
-Linuxでは、以下のコマンドでダウンロードしたアーカイブの整合性を確認できます。
-
-```bash
-sha256sum -c SHA256SUMS
 ```
 
 ### プロジェクトステータス
