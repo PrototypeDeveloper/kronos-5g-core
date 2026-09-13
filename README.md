@@ -9,7 +9,12 @@ Kronos 5G Core is a 5G Standalone (SA) Core Network software platform intended f
 
 ## Download v0.1.0
 
-On Linux, the current release can be downloaded and verified with:
+You can download the current release directly from the links below:
+
+* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz)
+* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS)
+
+Or download from the command line:
 
 ```bash
 wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
@@ -28,6 +33,8 @@ Extract the package with:
 
 ```bash
 tar xzf kronos5gcore.tar.gz
+```
+
 ```
 
 [English](#english) | [日本語](#日本語)
