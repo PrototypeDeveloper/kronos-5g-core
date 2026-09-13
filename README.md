@@ -14,12 +14,16 @@ You can download the current release directly from the links below:
 * [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz)
 * [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS)
 
-Or download from the command line:
+On Linux, the release can also be downloaded from the command line:
 
 ```bash
 wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
 wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS
+```
 
+Verify the integrity of the downloaded archive:
+
+```bash
 sha256sum -c SHA256SUMS
 ```
 
@@ -29,12 +33,10 @@ If verification succeeds:
 kronos5gcore.tar.gz: OK
 ```
 
-Extract the package with:
+Extract the package:
 
 ```bash
 tar xzf kronos5gcore.tar.gz
-```
-
 ```
 
 [English](#english) | [日本語](#日本語)
@@ -101,6 +103,9 @@ The integrity of the downloaded archive can be verified with:
 sha256sum -c SHA256SUMS
 ```
 
+> **Note:** The automatically generated GitHub `Source code (zip)` and `Source code (tar.gz)` archives do not contain the Kronos 5G Core release package.
+> Please use `kronos5gcore.tar.gz` from the Release Assets.
+
 ### Project Status
 
 Kronos 5G Core is currently intended primarily for:
@@ -137,7 +142,12 @@ This project does not claim 3GPP certification or full conformance.
 
 Kronos 5G Coreのソフトウェアパッケージは、GitHubの **Releases** から配布しています。
 
-Linuxでは以下のコマンドでv0.1.0を取得できます。
+以下のリンクからv0.1.0を直接ダウンロードできます。
+
+* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz)
+* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS)
+
+Linuxでは、以下のコマンドでもダウンロードできます。
 
 ```bash
 wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
@@ -203,6 +213,9 @@ Demo Modeでは以下を利用できます。
 kronos5gcore.tar.gz
 SHA256SUMS
 ```
+
+> **注意:** GitHubが自動生成する `Source code (zip)` および `Source code (tar.gz)` には、Kronos 5G Coreのリリースパッケージは含まれていません。
+> Release Assetsにある `kronos5gcore.tar.gz` を使用してください。
 
 ### プロジェクトステータス
 
