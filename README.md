@@ -1,24 +1,23 @@
 # Kronos 5G Core
 
-**5G SA Core Network Software for Evaluation, Development, and PoC**
+5G SA Core Network Software for Evaluation, Development, and PoC
 
 Kronos 5G Core is a 5G Standalone (SA) Core Network software platform intended for evaluation, development, interoperability testing, and Local 5G / Private 5G PoC environments.
 
-> The Kronos 5G Core software package is distributed through **GitHub Releases**.
-> `git clone` retrieves this repository and README, but does not download the release package.
+> The Kronos 5G Core software package is distributed through GitHub Releases. `git clone` retrieves this repository and README, but does not download the release package.
 
-## Download v0.1.0
+## Download v0.2.0
 
 You can download the current release directly from the links below:
 
-* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz)
-* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS)
+* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz)
+* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS)
 
 On Linux, the release can also be downloaded from the command line:
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS
 ```
 
 Verify the integrity of the downloaded archive:
@@ -43,8 +42,6 @@ tar xzf kronos5gcore.tar.gz
 
 ---
 
-<a id="english"></a>
-
 ## English
 
 ### Overview
@@ -57,9 +54,29 @@ The software is designed with consideration for the functional architecture defi
 
 * 5G Standalone Core Network software
 * Designed with consideration for the 5G Core functional architecture defined by 3GPP specifications
+* IPv4 and IPv6 addressing support across network interfaces
+* IPv4, IPv6, and Ethernet PDU Session Types
+* VoNR functionality
+* TSN functionality
 * Basic 1 Call connectivity verified using a gNodeB emulator
 * Free Demo Mode available
 * Suitable for 5G / Local 5G / Private 5G evaluation and PoC environments
+
+### Feature Support
+
+The following functionality is available in v0.2.0.
+
+| Feature                            | Support Status | Validation Status                        |
+| ---------------------------------- | -------------- | ---------------------------------------- |
+| Network interface addressing: IPv4 | Supported      | Used in the current verified environment |
+| Network interface addressing: IPv6 | Beta           | Not yet validated                        |
+| PDU Session Type: IPv4             | Supported      | Basic connectivity verified              |
+| PDU Session Type: IPv6             | Beta           | Not yet validated                        |
+| PDU Session Type: Ethernet         | Beta           | Not yet validated                        |
+| VoNR                               | Beta           | Not yet validated                        |
+| TSN                                | Beta           | Not yet validated                        |
+
+Beta functionality is provided for evaluation and development purposes and has not yet been fully validated in an end-to-end environment.
 
 ### Verified Connectivity
 
@@ -71,24 +88,28 @@ gNodeB (emulator) ⇔ Kronos 5G Core ⇔ DN
 
 DN: Data Network
 
+IPv4 is currently used for the verified basic connectivity environment.
+
+IPv6, Ethernet PDU Sessions, VoNR, and TSN functionality are currently provided as beta features and have not yet been functionally validated.
+
 ### Demo Mode
 
-A free **Demo Mode** is available for evaluation.
+A free Demo Mode is available for evaluation.
 
 Demo Mode supports:
 
-* Up to **2 gNodeBs**
-* Up to **2 UEs**
+* Up to 2 gNodeBs
+* Up to 2 UEs
 
 This allows basic 5G Core functionality to be evaluated without a paid license.
 
 ### Releases
 
-Release packages are distributed through the **Releases** section of this repository.
+Release packages are distributed through the Releases section of this repository.
 
 Current public release:
 
-**Kronos 5G Core v0.1.0**
+**Kronos 5G Core v0.2.0**
 
 Release files:
 
@@ -103,8 +124,7 @@ The integrity of the downloaded archive can be verified with:
 sha256sum -c SHA256SUMS
 ```
 
-> **Note:** The automatically generated GitHub `Source code (zip)` and `Source code (tar.gz)` archives do not contain the Kronos 5G Core release package.
-> Please use `kronos5gcore.tar.gz` from the Release Assets.
+> Note: The automatically generated GitHub `Source code (zip)` and `Source code (tar.gz)` archives do not contain the Kronos 5G Core release package. Please use `kronos5gcore.tar.gz` from the Release Assets.
 
 ### Project Status
 
@@ -116,7 +136,7 @@ Kronos 5G Core is currently intended primarily for:
 * Interoperability verification
 * Proof of Concept (PoC)
 
-Functionality and interoperability will continue to be expanded in future releases.
+Functionality and interoperability will continue to be expanded and validated in future releases.
 
 ### Disclaimer
 
@@ -124,15 +144,15 @@ Kronos 5G Core is an independent implementation intended for evaluation, develop
 
 This project does not claim 3GPP certification or full conformance.
 
----
+Beta functionality has not yet been fully validated and should be considered experimental.
 
-<a id="日本語"></a>
+---
 
 ## 日本語
 
 ### 概要
 
-**Kronos 5G Core** は、5G Standalone（SA）ネットワークの評価・開発・相互接続試験を目的とした5Gコアネットワークソフトウェアです。
+Kronos 5G Core は、5G Standalone（SA）ネットワークの評価・開発・相互接続試験を目的とした5Gコアネットワークソフトウェアです。
 
 ローカル5G / プライベート5Gを含む、研究・開発・検証・PoC環境での利用を想定しています。
 
@@ -140,18 +160,18 @@ This project does not claim 3GPP certification or full conformance.
 
 ### ダウンロード
 
-Kronos 5G Coreのソフトウェアパッケージは、GitHubの **Releases** から配布しています。
+Kronos 5G Coreのソフトウェアパッケージは、GitHubの Releases から配布しています。
 
-以下のリンクからv0.1.0を直接ダウンロードできます。
+以下のリンクからv0.2.0を直接ダウンロードできます。
 
-* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz)
-* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS)
+* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz)
+* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS)
 
 Linuxでは、以下のコマンドでもダウンロードできます。
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.1.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS
 ```
 
 ダウンロード後、SHA-256ハッシュを確認します。
@@ -176,9 +196,29 @@ tar xzf kronos5gcore.tar.gz
 
 * 5G Standalone Core Networkソフトウェア
 * 3GPP仕様で定義されている5G Coreの機能構成を考慮した設計
+* 各ネットワークインターフェースでIPv4 / IPv6アドレスに対応
+* PDU Session TypeとしてIPv4 / IPv6 / Ethernetに対応
+* VoNR機能に対応
+* TSN機能に対応
 * gNodeBエミュレータを使用した基本的な1 Call接続を確認済み
 * 無料で利用可能なDemo Modeを提供
 * 5G / ローカル5G / プライベート5Gの評価・PoC環境で利用可能
+
+### 機能対応状況
+
+v0.2.0では以下の機能を提供しています。
+
+| 機能                        | 対応状況 | 動作検証       |
+| ------------------------- | ---- | ---------- |
+| ネットワークインターフェース：IPv4       | 対応   | 現在の検証環境で使用 |
+| ネットワークインターフェース：IPv6       | β版   | 未検証        |
+| PDU Session Type：IPv4     | 対応   | 基本通信を確認済み  |
+| PDU Session Type：IPv6     | β版   | 未検証        |
+| PDU Session Type：Ethernet | β版   | 未検証        |
+| VoNR                      | β版   | 未検証        |
+| TSN                       | β版   | 未検証        |
+
+β版機能は評価・開発用途として提供しているものであり、End-to-End環境での完全な動作検証はまだ実施していません。
 
 ### 動作確認
 
@@ -190,22 +230,28 @@ gNodeB (emulator) ⇔ Kronos 5G Core ⇔ DN
 
 DN：Data Network
 
+現在、基本通信の動作確認にはIPv4を使用しています。
+
+IPv6、Ethernet PDU Session、VoNR、TSNについてはβ版機能として提供しており、機能動作検証はまだ実施していません。
+
 ### Demo Mode
 
-評価用途として無料で利用できる **Demo Mode** を提供しています。
+評価用途として無料で利用できる Demo Mode を提供しています。
 
 Demo Modeでは以下を利用できます。
 
-* gNodeB：最大 **2台**
-* UE：最大 **2台**
+* gNodeB：最大2台
+* UE：最大2台
 
 有料ライセンスなしで、基本的な5G Core機能を評価できます。
 
 ### リリース
 
+リリースパッケージは、本リポジトリの Releases から配布しています。
+
 現在の公開リリース：
 
-**Kronos 5G Core v0.1.0**
+**Kronos 5G Core v0.2.0**
 
 リリースファイル：
 
@@ -214,8 +260,13 @@ kronos5gcore.tar.gz
 SHA256SUMS
 ```
 
-> **注意:** GitHubが自動生成する `Source code (zip)` および `Source code (tar.gz)` には、Kronos 5G Coreのリリースパッケージは含まれていません。
-> Release Assetsにある `kronos5gcore.tar.gz` を使用してください。
+ダウンロードしたアーカイブの整合性は、以下のコマンドで確認できます。
+
+```bash
+sha256sum -c SHA256SUMS
+```
+
+> 注意: GitHubが自動生成する `Source code (zip)` および `Source code (tar.gz)` には、Kronos 5G Coreのリリースパッケージは含まれていません。Release Assetsにある `kronos5gcore.tar.gz` を使用してください。
 
 ### プロジェクトステータス
 
@@ -227,10 +278,12 @@ Kronos 5G Coreは、現在主に以下の用途を想定しています。
 * 相互接続検証
 * Proof of Concept（PoC）
 
-今後のリリースで、機能および相互接続性を継続して拡張していく予定です。
+今後のリリースで、各機能の動作検証および相互接続性を継続して拡張していく予定です。
 
 ### 免責事項
 
 Kronos 5G Coreは、評価、開発、テスト、PoC用途を目的とした独立実装です。
 
 本プロジェクトは、3GPP認証取得や完全準拠を主張するものではありません。
+
+β版として提供している機能は、完全な動作検証をまだ実施していない実験的な機能として扱ってください。
