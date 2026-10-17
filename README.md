@@ -6,18 +6,18 @@ Kronos 5G Core is a 5G Standalone (SA) Core Network software platform intended f
 
 > The Kronos 5G Core software package is distributed through GitHub Releases. `git clone` retrieves this repository and README, but does not download the release package.
 
-## Download v0.2.0
+## Download v0.3.0
 
 You can download the current release directly from the links below:
 
-* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz)
-* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS)
+* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz)
+* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS)
 
 On Linux, the release can also be downloaded from the command line:
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS
 ```
 
 Verify the integrity of the downloaded archive:
@@ -64,7 +64,7 @@ The software is designed with consideration for the functional architecture defi
 
 ### Feature Support
 
-The following functionality is available in v0.2.0.
+The following functionality is available in v0.3.0.
 
 | Feature                            | Support Status | Validation Status                        |
 | ---------------------------------- | -------------- | ---------------------------------------- |
@@ -109,7 +109,7 @@ Release packages are distributed through the Releases section of this repository
 
 Current public release:
 
-**Kronos 5G Core v0.2.0**
+**Kronos 5G Core v0.3.0**
 
 Release files:
 
@@ -162,16 +162,16 @@ Kronos 5G Core は、5G Standalone（SA）ネットワークの評価・開発�
 
 Kronos 5G Coreのソフトウェアパッケージは、GitHubの Releases から配布しています。
 
-以下のリンクからv0.2.0を直接ダウンロードできます。
+以下のリンクからv0.3.0を直接ダウンロードできます。
 
-* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz)
-* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS)
+* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz)
+* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS)
 
 Linuxでは、以下のコマンドでもダウンロードできます。
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.2.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS
 ```
 
 ダウンロード後、SHA-256ハッシュを確認します。
@@ -206,7 +206,7 @@ tar xzf kronos5gcore.tar.gz
 
 ### 機能対応状況
 
-v0.2.0では以下の機能を提供しています。
+v0.3.0では以下の機能を提供しています。
 
 | 機能                        | 対応状況 | 動作検証       |
 | ------------------------- | ---- | ---------- |
@@ -251,7 +251,7 @@ Demo Modeでは以下を利用できます。
 
 現在の公開リリース：
 
-**Kronos 5G Core v0.2.0**
+**Kronos 5G Core v0.3.0**
 
 リリースファイル：
 
