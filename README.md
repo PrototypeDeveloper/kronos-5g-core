@@ -6,18 +6,18 @@ Kronos 5G Core is a 5G Standalone (SA) Core Network software platform intended f
 
 > The Kronos 5G Core software package is distributed through GitHub Releases. `git clone` retrieves this repository and README, but does not download the release package.
 
-## Download v0.3.0
+## Download v0.4.0
 
 You can download the current release directly from the links below:
 
-* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz)
-* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS)
+* [Download kronos5gcore.tar.gz](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/kronos5gcore.tar.gz)
+* [Download SHA256SUMS](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/SHA256SUMS)
 
 On Linux, the release can also be downloaded from the command line:
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/SHA256SUMS
 ```
 
 Verify the integrity of the downloaded archive:
@@ -59,22 +59,23 @@ The software is designed with consideration for the functional architecture defi
 * VoNR functionality
 * TSN functionality
 * Basic 1 Call connectivity verified using a gNodeB emulator
+* End-to-end connectivity verified using a physical 5G UE (RM520N-GL) with Kronos 5G RAN and USRP B210
 * Free Demo Mode available
 * Suitable for 5G / Local 5G / Private 5G evaluation and PoC environments
 
 ### Feature Support
 
-The following functionality is available in v0.3.0.
+The following functionality is available in v0.4.0.
 
-| Feature                            | Support Status | Validation Status                        |
-| ---------------------------------- | -------------- | ---------------------------------------- |
-| Network interface addressing: IPv4 | Supported      | Used in the current verified environment |
-| Network interface addressing: IPv6 | Beta           | Not yet validated                        |
-| PDU Session Type: IPv4             | Supported      | Basic connectivity verified              |
-| PDU Session Type: IPv6             | Beta           | Not yet validated                        |
-| PDU Session Type: Ethernet         | Beta           | Not yet validated                        |
-| VoNR                               | Beta           | Not yet validated                        |
-| TSN                                | Beta           | Not yet validated                        |
+| Feature | Support Status | Validation Status |
+|---|---|---|
+| Network interface addressing: IPv4 | Supported | Verified in the physical UE environment |
+| Network interface addressing: IPv6 | Beta | Not yet validated |
+| PDU Session Type: IPv4 | Supported | End-to-end IP connectivity verified using RM520N-GL |
+| PDU Session Type: IPv6 | Beta | Not yet validated |
+| PDU Session Type: Ethernet | Beta | Not yet validated |
+| VoNR | Beta | Not yet validated |
+| TSN | Beta | Not yet validated |
 
 Beta functionality is provided for evaluation and development purposes and has not yet been fully validated in an end-to-end environment.
 
@@ -86,9 +87,19 @@ Basic connectivity has been verified with the following configuration:
 gNodeB (emulator) ⇔ Kronos 5G Core ⇔ DN
 ```
 
+Physical UE connectivity has also been verified with the following configuration:
+
+```text
+RM520N-GL 5G DONGLE ⇔ USRP B210 ⇔ Kronos 5G RAN ⇔ Kronos 5G Core ⇔ DN
+```
+
 DN: Data Network
 
-IPv4 is currently used for the verified basic connectivity environment.
+The RM520N-GL successfully established connectivity through USRP B210, Kronos 5G RAN, and Kronos 5G Core. Bidirectional IP traffic was verified using a conducted RF connection with a coaxial cable and RF attenuator.
+
+IPv4 is currently used for the verified end-to-end connectivity environment.
+
+Over-the-air (OTA) testing has not yet been performed because the required radio license procedures have not yet been completed.
 
 IPv6, Ethernet PDU Sessions, VoNR, and TSN functionality are currently provided as beta features and have not yet been functionally validated.
 
@@ -109,7 +120,7 @@ Release packages are distributed through the Releases section of this repository
 
 Current public release:
 
-**Kronos 5G Core v0.3.0**
+Kronos 5G Core v0.4.0
 
 Release files:
 
@@ -146,6 +157,8 @@ This project does not claim 3GPP certification or full conformance.
 
 Beta functionality has not yet been fully validated and should be considered experimental.
 
+Over-the-air transmission requires an appropriate radio license in your country or region. Users are responsible for complying with all applicable radio regulations.
+
 ---
 
 ## 日本語
@@ -162,16 +175,16 @@ Kronos 5G Core は、5G Standalone（SA）ネットワークの評価・開発�
 
 Kronos 5G Coreのソフトウェアパッケージは、GitHubの Releases から配布しています。
 
-以下のリンクからv0.3.0を直接ダウンロードできます。
+以下のリンクからv0.4.0を直接ダウンロードできます。
 
-* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz)
-* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS)
+* [kronos5gcore.tar.gz をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/kronos5gcore.tar.gz)
+* [SHA256SUMS をダウンロード](https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/SHA256SUMS)
 
 Linuxでは、以下のコマンドでもダウンロードできます。
 
 ```bash
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/kronos5gcore.tar.gz
-wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.3.0/SHA256SUMS
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/kronos5gcore.tar.gz
+wget https://github.com/PrototypeDeveloper/kronos-5g-core/releases/download/v0.4.0/SHA256SUMS
 ```
 
 ダウンロード後、SHA-256ハッシュを確認します。
@@ -201,22 +214,23 @@ tar xzf kronos5gcore.tar.gz
 * VoNR機能に対応
 * TSN機能に対応
 * gNodeBエミュレータを使用した基本的な1 Call接続を確認済み
+* USRP B210とKronos 5G RANを経由した実機UE（RM520N-GL）とのEnd-to-End接続を確認済み
 * 無料で利用可能なDemo Modeを提供
 * 5G / ローカル5G / プライベート5Gの評価・PoC環境で利用可能
 
 ### 機能対応状況
 
-v0.3.0では以下の機能を提供しています。
+v0.4.0では以下の機能を提供しています。
 
-| 機能                        | 対応状況 | 動作検証       |
-| ------------------------- | ---- | ---------- |
-| ネットワークインターフェース：IPv4       | 対応   | 現在の検証環境で使用 |
-| ネットワークインターフェース：IPv6       | β版   | 未検証        |
-| PDU Session Type：IPv4     | 対応   | 基本通信を確認済み  |
-| PDU Session Type：IPv6     | β版   | 未検証        |
-| PDU Session Type：Ethernet | β版   | 未検証        |
-| VoNR                      | β版   | 未検証        |
-| TSN                       | β版   | 未検証        |
+| 機能 | 対応状況 | 動作検証 |
+|---|---|---|
+| ネットワークインターフェース：IPv4 | 対応 | 実機UE環境で確認済み |
+| ネットワークインターフェース：IPv6 | β版 | 未検証 |
+| PDU Session Type：IPv4 | 対応 | RM520N-GLを使用したEnd-to-End IP通信を確認済み |
+| PDU Session Type：IPv6 | β版 | 未検証 |
+| PDU Session Type：Ethernet | β版 | 未検証 |
+| VoNR | β版 | 未検証 |
+| TSN | β版 | 未検証 |
 
 β版機能は評価・開発用途として提供しているものであり、End-to-End環境での完全な動作検証はまだ実施していません。
 
@@ -228,9 +242,19 @@ v0.3.0では以下の機能を提供しています。
 gNodeB (emulator) ⇔ Kronos 5G Core ⇔ DN
 ```
 
+さらに、以下の構成で実機UEによるEnd-to-End接続を確認しています。
+
+```text
+RM520N-GL 5G DONGLE ⇔ USRP B210 ⇔ Kronos 5G RAN ⇔ Kronos 5G Core ⇔ DN
+```
+
 DN：Data Network
 
-現在、基本通信の動作確認にはIPv4を使用しています。
+RM520N-GLはUSRP B210、Kronos 5G RAN、Kronos 5G Coreを経由した接続を確立し、同軸ケーブルとRFアッテネータを使用した有線RF接続により、双方向のIP通信を確認しています。
+
+現在、End-to-End接続の動作確認にはIPv4を使用しています。
+
+必要な無線局免許の手続きが完了していないため、OTA（Over The Air）試験はまだ実施していません。
 
 IPv6、Ethernet PDU Session、VoNR、TSNについてはβ版機能として提供しており、機能動作検証はまだ実施していません。
 
@@ -251,7 +275,7 @@ Demo Modeでは以下を利用できます。
 
 現在の公開リリース：
 
-**Kronos 5G Core v0.3.0**
+Kronos 5G Core v0.4.0
 
 リリースファイル：
 
@@ -287,3 +311,5 @@ Kronos 5G Coreは、評価、開発、テスト、PoC用途を目的とした独
 本プロジェクトは、3GPP認証取得や完全準拠を主張するものではありません。
 
 β版として提供している機能は、完全な動作検証をまだ実施していない実験的な機能として扱ってください。
+
+無線による送信を行う場合は、各国・地域の法令に基づく無線局免許が必要です。関係する電波法令の遵守は利用者の責任となります。
